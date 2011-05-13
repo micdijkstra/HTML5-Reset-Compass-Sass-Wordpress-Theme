@@ -1,252 +1,433 @@
-/*   
-Theme Name: The HTML5 Reset Theme
-Theme URI: http://html5reset.org
-Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
-Author: Monkey Do!
-Author URI: http://monkeydo.biz
-Version: 1
-*/
-
-/*
-	HTML5 Reset Wordpress Theme :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
-	
--------------------------------------------------------------------------------*/
-
-/* Let's default this puppy out
--------------------------------------------------------------------------------*/
-
+/* line 12, _/stylesheets/partials/_html5reset.sass */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}									
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+/* line 21, _/stylesheets/partials/_html5reset.sass */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
 
-/* Responsive images and other embedded objects
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
-   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
-img,
-object,
-embed {max-width: 100%;}
+/* line 27, _/stylesheets/partials/_html5reset.sass */
+img, object, embed {
+  max-width: 100%;
+}
 
-/* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+/* line 31, _/stylesheets/partials/_html5reset.sass */
+html {
+  overflow-y: scroll;
+}
 
-/* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. */
-ul {list-style: none;}
+/* line 37, _/stylesheets/partials/_html5reset.sass */
+ul {
+  list-style: none;
+}
 
-blockquote, q {quotes: none;}
+/* line 40, _/stylesheets/partials/_html5reset.sass */
+blockquote, q {
+  quotes: none;
+}
 
-blockquote:before, 
-blockquote:after, 
-q:before, 
-q:after {content: ''; content: none;}
+/* line 43, _/stylesheets/partials/_html5reset.sass */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
 
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+/* line 47, _/stylesheets/partials/_html5reset.sass */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-del {text-decoration: line-through;}
+/* line 54, _/stylesheets/partials/_html5reset.sass */
+del {
+  text-decoration: line-through;
+}
 
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+/* line 57, _/stylesheets/partials/_html5reset.sass */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted black;
+  cursor: help;
+}
 
-/* tables still need cellspacing="0" in the markup */
-table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
-td {font-weight: normal; vertical-align: top;}
+/* line 62, _/stylesheets/partials/_html5reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+/* line 65, _/stylesheets/partials/_html5reset.sass */
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
 
-input, select {vertical-align: middle;}
+/* line 68, _/stylesheets/partials/_html5reset.sass */
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
 
+/* line 72, _/stylesheets/partials/_html5reset.sass */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 80, _/stylesheets/partials/_html5reset.sass */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 83, _/stylesheets/partials/_html5reset.sass */
 pre {
-	white-space: pre; /* CSS2 */
-	white-space: pre-wrap; /* CSS 2.1 */
-	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-	word-wrap: break-word; /* IE */
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
-input[type="radio"] {vertical-align: text-bottom;}
-input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
-.ie6 input {vertical-align: text-bottom;}
+/* line 89, _/stylesheets/partials/_html5reset.sass */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
-select, input, textarea {font: 99% sans-serif;}
+/* line 91, _/stylesheets/partials/_html5reset.sass */
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline;
+}
 
-table {font-size: inherit; font: 100%;}
- 
-/* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active {outline: none;}
+/* line 94, _/stylesheets/partials/_html5reset.sass */
+.ie6 input {
+  vertical-align: text-bottom;
+}
 
-small {font-size: 85%;}
+/* line 97, _/stylesheets/partials/_html5reset.sass */
+select, input, textarea {
+  font: 99% sans-serif;
+}
 
-strong, th {font-weight: bold;}
+/* line 100, _/stylesheets/partials/_html5reset.sass */
+table {
+  font-size: inherit;
+  font: 100%;
+}
 
-td, td img {vertical-align: top;} 
+/* line 106, _/stylesheets/partials/_html5reset.sass */
+a:hover, a:active {
+  outline: none;
+}
 
-/* Make sure sup and sub don't screw with your line-heights
-	gist.github.com/413930 */
-sub, sup {font-size: 75%; line-height: 0; position: relative;}
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
+/* line 109, _/stylesheets/partials/_html5reset.sass */
+small {
+  font-size: 85%;
+}
 
-/* standardize any monospaced elements */
-pre, code, kbd, samp {font-family: monospace, sans-serif;}
+/* line 112, _/stylesheets/partials/_html5reset.sass */
+strong, th {
+  font-weight: bold;
+}
 
-/* hand cursor on clickable elements */
-.clickable,
-label, 
-input[type=button], 
-input[type=submit], 
-button {cursor: pointer;}
+/* line 115, _/stylesheets/partials/_html5reset.sass */
+td, td img {
+  vertical-align: top;
+}
 
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {margin: 0;}
+/* line 120, _/stylesheets/partials/_html5reset.sass */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
 
-/* make buttons play nice in IE */
-button {width: auto; overflow: visible;}
- 
-/* scale images in IE7 more attractively */
-.ie7 img {-ms-interpolation-mode: bicubic;}
+/* line 124, _/stylesheets/partials/_html5reset.sass */
+sup {
+  top: -0.5em;
+}
 
-/* prevent BG image flicker upon hover */
-.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+/* line 126, _/stylesheets/partials/_html5reset.sass */
+sub {
+  bottom: -0.25em;
+}
 
-/* let's clear some floats */
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
-.clearfix:after { clear: both; }  
-.clearfix { zoom: 1; }  
+/* line 130, _/stylesheets/partials/_html5reset.sass */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
 
+/* line 134, _/stylesheets/partials/_html5reset.sass */
+.clickable, label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
 
+/* line 138, _/stylesheets/partials/_html5reset.sass */
+button, input, select, textarea {
+  margin: 0;
+}
 
-/* Ok, this is where the fun starts.
--------------------------------------------------------------------------------*/
+/* line 142, _/stylesheets/partials/_html5reset.sass */
+button {
+  width: auto;
+  overflow: visible;
+}
 
-/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
+/* line 147, _/stylesheets/partials/_html5reset.sass */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
 
-/* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+/* line 150, _/stylesheets/partials/_html5reset.sass */
+.ie6 html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
 
-/* we like off-black for text */
-body, select, input, textarea {color: #333;}
+/* line 154, _/stylesheets/partials/_html5reset.sass */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
 
-a {color: #03f;}
-a:hover {color: #69f;}
+/* line 159, _/stylesheets/partials/_html5reset.sass */
+.clearfix:after {
+  clear: both;
+}
 
-/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+/* line 161, _/stylesheets/partials/_html5reset.sass */
+.clearfix {
+  zoom: 1;
+}
 
-/*	j.mp/webkit-tap-highlight-color */
-a:link {-webkit-tap-highlight-color: #fcd700;} 
+/* line 170, _/stylesheets/partials/_html5reset.sass */
+body {
+  font: 13px Helmet, Freesans, sans-serif;
+}
 
-ins {background-color: #fcd700; color: #000; text-decoration: none;}
-mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+/* line 177, _/stylesheets/partials/_html5reset.sass */
+body, select, input, textarea {
+  color: #333333;
+}
 
+/* line 180, _/stylesheets/partials/_html5reset.sass */
+a {
+  color: #0033ff;
+}
 
+/* line 182, _/stylesheets/partials/_html5reset.sass */
+a:hover {
+  color: #6699ff;
+}
 
-/* And here begins the Wordpress fun.
--------------------------------------------------------------------------------*/
+/* line 186, _/stylesheets/partials/_html5reset.sass */
+::-moz-selection {
+  background: #fcd700;
+  color: white;
+  text-shadow: none;
+}
 
-#page-wrap {width: 960px; margin: 20px auto;}
+/* line 190, _/stylesheets/partials/_html5reset.sass */
+::selection {
+  background: #fcd700;
+  color: white;
+  text-shadow: none;
+}
 
-.post {}
+/* line 196, _/stylesheets/partials/_html5reset.sass */
+a:link {
+  -webkit-tap-highlight-color: #fcd700;
+}
 
-.entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
+/* line 199, _/stylesheets/partials/_html5reset.sass */
+ins {
+  background-color: #fcd700;
+  color: black;
+  text-decoration: none;
+}
 
-#meta {}
-.postmetadata {}
+/* line 203, _/stylesheets/partials/_html5reset.sass */
+mark {
+  background-color: #fcd700;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
 
-#sidebar {}
+/* line 10, _/stylesheets/style.sass */
+body {
+  font-size: 75%;
+  font-family: sans-serif;
+}
 
-.navgation {}
-.next-posts {}
-.prev-posts {}
+/* line 14, _/stylesheets/style.sass */
+#page-wrap {
+  background: url('/_/images/grid.png');
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
 
-#searchform {}
-#s {}
-#searchsubmt {}
-	
-ol.commentlist {list-style: none;}
-ol.commentlist li {}
-ol.commentlist li.alt {}
-ol.commentlist li.bypostauthor {}
-ol.commentlist li.byuser {}
-ol.commentlist li.comment-author-admin {}
-ol.commentlist li.comment {border-bottom: 1px dotted #666; padding: 10px;}
-ol.commentlist li.comment div.comment-author {}
-ol.commentlist li.comment div.vcard {}
-ol.commentlist li.comment div.vcard cite.fn {font-style: normal;}
-ol.commentlist li.comment div.vcard cite.fn a.url {}
-ol.commentlist li.comment div.vcard img.avatar {float:right; margin: 0 0 10px 10px;}
-ol.commentlist li.comment div.vcard img.avatar-32 {}
-ol.commentlist li.comment div.vcard img.photo {}
-ol.commentlist li.comment div.vcard span.says {}
-ol.commentlist li.comment div.commentmetadata {}
-ol.commentlist li.comment div.comment-meta {font-size: 10px;}
-ol.commentlist li.comment div.comment-meta a {color: #ccc;}
-ol.commentlist li.comment p {}
-ol.commentlist li.comment ul {}
-ol.commentlist li.comment div.reply {font-size: 11px;}
-ol.commentlist li.comment div.reply a {font-weight: bold;}
-ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
-ol.commentlist li.comment ul.children li {}
-ol.commentlist li.comment ul.children li.alt {}
-ol.commentlist li.comment ul.children li.bypostauthor {}
-ol.commentlist li.comment ul.children li.byuser {}
-ol.commentlist li.comment ul.children li.comment {}
-ol.commentlist li.comment ul.children li.comment-author-admin {}
-ol.commentlist li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-5 {}
-ol.commentlist li.comment ul.children li.odd {}
-ol.commentlist li.even {background: #fff;}
-ol.commentlist li.odd {background: #f6f6f6;}
-ol.commentlist li.parent {border-left: 5px solid #111;}
-ol.commentlist li.thread-alt {}
-ol.commentlist li.thread-even {}
-ol.commentlist li.thread-odd {}
+/* line 18, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form label {
+  font-weight: bold;
+}
+/* line 19, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+/* line 20, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 26, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.text, form input.title, form input[type=email], form input[type=text], form input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 27, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.title {
+  font-size: 1.5em;
+}
+/* line 31, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input[type=checkbox], form input.checkbox, form input[type=radio], form input.radio {
+  position: relative;
+  top: 0.25em;
+}
+/* line 33, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+/* line 34, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form select {
+  margin: 0.5em 0;
+}
+/* line 59, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form fieldset {
+  border: 1px solid #cccccc;
+}
+/* line 62, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.text, form input.title, form input[type=email], form input[type=text], form input[type=password],
+form textarea, form select {
+  border: 1px solid #bbbbbb;
+}
+/* line 64, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.text:focus, form input.title:focus, form input[type=email]:focus, form input[type=text]:focus, form input[type=password]:focus,
+form textarea:focus, form select:focus {
+  border: 1px solid #666666;
+}
+/* line 48, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.text, form input.title, form input[type=email], form input[type=text], form input[type=password] {
+  width: 300px;
+}
+/* line 50, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form textarea {
+  width: 390px;
+  height: 250px;
+}
 
-
-/* Print styles!
--------------------------------------------------------------------------------*/
 @media print {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: black;
+  background: none;
+  font-size: 10pt;
+  /* line 52, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  .container {
+    background: none;
+  }
 
+  /* line 54, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  hr {
+    background: #cccccc;
+    color: #cccccc;
+    width: 100%;
+    height: 2px;
+    margin: 2em 0;
+    padding: 0;
+    border: none;
+  }
+  /* line 62, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  hr.space {
+    background: white;
+    color: white;
+  }
 
+  /* line 65, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  }
 
+  /* line 67, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  code {
+    font-size: 0.9em;
+    font-family: "andale mono", "lucida console", monospace;
+  }
+
+  /* line 72, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  a img {
+    border: none;
+  }
+  /* line 75, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  a:link, a:visited {
+    background: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  /* line 79, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  p img.top {
+    margin-top: 0;
+  }
+
+  /* line 81, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  blockquote {
+    margin: 1.5em;
+    padding: 1em;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  /* line 86, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  .small {
+    font-size: 0.9em;
+  }
+
+  /* line 88, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  .large {
+    font-size: 1.1em;
+  }
+
+  /* line 90, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  .quiet {
+    color: #999999;
+  }
+
+  /* line 92, ../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+  .hide {
+    display: none;
+  }
 }
 
-
-/* Media queries!
--------------------------------------------------------------------------------*/
-
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-	
-		
-}
-
-@media all and (orientation: portrait) {
-	
-}
-
-@media all and (orientation: landscape) {
-	
-}
+@media screen and (max-device-width: 480px);
+@media all and (orientation: portrait);
+@media all and (orientation: landscape);

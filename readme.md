@@ -1,8 +1,8 @@
-#  HTML5 Reset Wordpress Theme
+## HTML5 Wordpress Theme with Compass and Sass
 
-## Summary:
+This is a Compass / Sass adaptation of the HTML5 Wordpress Theme which is a blank theme based on the [HTML5 Reset templates](https://github.com/murtaugh/HTML5-Reset). It's a great empty slate upon which to build your own HTML5-based Wordpress themes with the benefits of Compass and Sass.
 
-The HTML5 Reset Wordpress theme is a blank theme based on the [HTML5 Reset templates](https://github.com/murtaugh/HTML5-Reset). It's a great empty slate upon which to build your own HTML5-based Wordpress themes.
+## HTML5 Wordpress Theme Summary:
 
 ### hNews
 
@@ -19,3 +19,40 @@ In addition to all the standard Wordpress elements and classes, we have added th
 7. IE-specific classes for simple CSS-targeting
 8. iPhone/iPad/iTouch icon snippets 
 9. Lots of other keen stuff...
+
+
+## Sass Structure
+
+Sass stylesheets are stored in _/stylesheets and output to /style.css
+style.Sass is made up of a number of key partials
+  1. Base - see Compass best practices (http://compass-style.org/help/tutorials/best_practices/)
+  2. HTML5 Reset
+  3. Blueprint
+  4. Mixins
+  5. Print - Print styles
+  6. Media - Responsive web design
+
+  
+## Changes to original HTML5 Reset Wordpress Theme
+
+Added selectivizr.js and DOMAssistant.js for further IE support
+
+Changed TEMPLATEPATH to bloginfo('template_url') - absolute path wasn't working on my server
+
+
+## Installation
+
+1. Download or clone the repo into your-site/wp-content/themes/ folder
+2. Open Terminal
+3. Run $ gem install compass
+3. Open Terminal and navigate to your-site/wp-content/themes/HTML5-Reset-Compass-Sass-Wordpress-Theme/
+4. Run $ compass watch
+5. Open your-site/wp-content/themes/HTML5-Reset-Compass-Sass-Wordpress-Theme/_/stylsheets in your favourite text editor (Textmate?) and code away…
+
+## Demo
+
+Demo site can be found at: http://html5reset.duckapp.co
+
+## Notes  
+
+This is built using .sass however can easily be converted to .scss if you prefer.
