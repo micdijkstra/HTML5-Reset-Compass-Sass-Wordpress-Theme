@@ -36,5 +36,12 @@
     }
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
+    
+  // Define Theme Constants
+  
+  define('HOMEPATH', get_bloginfo('url'));
+  define('THEMEPATH', get_stylesheet_directory_uri());  
+  define('IMAGESPATH', THEMEPATH . '/_/images/');  
+  define('JAVASCRIPTSPATH', THEMEPATH . '/_/javascripts/');    
 
 ?>
