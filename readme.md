@@ -51,12 +51,6 @@ Changed TEMPLATEPATH to bloginfo('template_url') - absolute path wasn't working 
 5. Open your-site/wp-content/themes/HTML5-Reset-Compass-Sass-Wordpress-Theme/_/stylsheets in your favourite text editor (Textmate?)
 6. Code away…
 
-## Demo
-
-HTML5 Reset documentation can be found at: http://html5reset.org/
-
-Demo site can be found at: http://html5reset.duckapp.co
-
 ## Notes  
 
 This is built using .sass however can easily be converted to .scss if you prefer.
